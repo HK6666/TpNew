@@ -3,12 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>编辑用户资料</title>
-<link rel="stylesheet" href="__PUBLIC __/admin/styles/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="/static/Astyles/style.css" type="text/css" media="all">
 </head>
 <body>
 <div class="container">
-    <h3 class="marginbot">编辑用户资料<a href="user_list.html" class="sgbtn">返回用户列表</a></h3>
+    <h3 class="marginbot">编辑用户资料<a href='{:url("admin/UserL/userL")}' class="sgbtn">返回用户列表</a></h3>
     <div class="mainbox">
+        <form action='{:url("admin/UserL/add")}' method="post">
             <table class="opt">
                 <tbody>
                     <tr>
@@ -30,6 +31,8 @@
                 </tbody>
             </table>
             <div class="opt"><input name="submit" value=" 提 交 " class="btn" tabindex="3" type="submit"></div>
+        </form>
+
     </div>
 </div>
 </body>

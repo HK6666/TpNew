@@ -3,16 +3,16 @@
 <head>
 <title>金陵贸易 后台管理系统</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link media="all" href="../../static/admin/styles/style.css" type="text/css" rel="stylesheet">
+<link media="all" href="../../static/Astyles/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-		<form id="loginform" method="post" action="">
+		<form id="loginform" method="post" action='{:url("admin/Login/login")}'>
         <table class="mainbox">
             <tbody>
                 <tr>
                     <td class="loginbox">
-                    	<img src="../../static/admin/images/login.gif">
+                    	<img src="/static/Aimages/login.gif">
                     </td>
                     <td class="login">
                     	<div class="errormsg loginmsg"><p>用户名不能为空！</p></div>
@@ -27,7 +27,7 @@
                         </tr>
                         <tr>
                         	<td>验证码:</td>
-                            <td><input type="text" value="" tabindex="3" class="txt" name="imgcode" style="width:70px;"/> <img id="imgcode" src="../../static/admin/images/imgcode.gif" title="看不清楚，点击换一张"/></td>
+                            <td><input type="text" value="" tabindex="3" class="txt" name="imgcode" style="width:70px;"/> <img id="imgcode" src="../../static/Aimages/imgcode.gif" title="看不清楚，点击换一张"/></td>
                         </tr>
                         <tr>
                         	<td></td>
